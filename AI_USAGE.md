@@ -1,9 +1,7 @@
-# AI Usage Log
-
 ## 1. Công cụ AI
 
-- **Tên công cụ:** ChatGPT (OpenAI).
-- **Cách sử dụng:** Trao đổi trực tiếp để phân tích website, xây dựng giao diện demo, giải thích và kiểm tra mã HTML/CSS.
+- Tên công cụ: ChatGPT (OpenAI).
+- Cách sử dụng: Trao đổi trực tiếp để phân tích website, xây dựng giao diện demo, giải thích và kiểm tra mã HTML/CSS.
 
 ## 2. Mục đích sử dụng
 
@@ -23,23 +21,23 @@ Dưới đây là các prompt chính, được trích hoặc tóm tắt từ qu�
 
 > Tôi đang thực hiện bài tập phát triển giao diện website thương mại điện tử bằng HTML5 và CSS3. Tôi muốn cải tiến khu vực tìm kiếm sản phẩm của Hella Beauty. Hãy đề xuất cấu trúc giao diện gồm ô tìm kiếm, từ khóa gợi ý, lịch sử tìm kiếm và sản phẩm phổ biến.
 
-**Prompt 2 – Tạo mã giao diện:**
+Prompt 2 – Tạo mã giao diện:
 
 > Dựa trên phương án đã thống nhất, hãy tạo một trang giao diện thương mại điện tử bằng HTML5 và CSS3; có tiêu đề, tối thiểu 4 sản phẩm mẫu (ảnh, tên, giá, nút thao tác), hỗ trợ máy tính và điện thoại; CSS tách riêng, không dùng backend hoặc cơ sở dữ liệu. Giải thích cách chạy và kiểm tra.
 
-**Prompt 3 – Nhận xét giao diện và đề xuất tự chỉnh sửa:**
+Prompt 3 – Nhận xét giao diện và đề xuất tự chỉnh sửa:
 
 > Đây là giao diện HTML AI đã tạo. Thầy yêu cầu tự chỉnh sửa ít nhất một điểm và giải thích HTML/CSS. Tôi sẽ thay hình ảnh, tên sản phẩm cho tương ứng; còn đề xuất cải tiến nào khác không?
 
-**Prompt 4 – Thêm nút:**
+Prompt 4 – Thêm nút:
 
 > Tôi muốn thêm button “Xem chi tiết” cho mỗi sản phẩm.
 
-**Prompt 5 – Kiểm tra lỗi CSS:**
+Prompt 5 – Kiểm tra lỗi CSS:
 
 > Tôi đã thêm CSS nhưng nút không thay đổi. Hãy kiểm tra đoạn HTML và CSS của tôi để tìm nguyên nhân.
 
-**Prompt 6 – Viết phần giải thích:**
+Prompt 6 – Viết phần giải thích:
 
 > Hãy giúp tôi trình bày những phần đã tự chỉnh sửa: thay ảnh thực tế, đồng bộ `data-name`, `data-keywords`, danh mục, mô tả và thêm nút “Xem chi tiết”; giải thích vai trò HTML/CSS.
 
@@ -64,11 +62,11 @@ Sau khi nhận kết quả từ AI, em đã thực hiện:
 - Đối chiếu HTML và CSS, sửa bộ chọn CSS từ `.product-details` thành `.btn-detail` để phù hợp với class đã dùng trong HTML.
 - Kiểm tra cách hiển thị của bố cục trên máy tính và mô phỏng điện thoại bằng Chrome DevTools.
 
-**Giới hạn:** Việc bổ sung nút bằng HTML/CSS không có nghĩa là tính năng mở chi tiết đã hoàn thiện. Chức năng này cần được kiểm tra trong `script.js` nếu muốn khẳng định có tương tác thực tế.
+Giới hạn: Việc bổ sung nút bằng HTML/CSS không có nghĩa là tính năng mở chi tiết đã hoàn thiện. Chức năng này cần được kiểm tra trong `script.js` nếu muốn khẳng định có tương tác thực tế.
 
 ## 6. Phần tôi hiểu và có thể giải thích
 
-**Về HTML5:**
+Về HTML5:
 
 - `<article>` tạo một khối nội dung sản phẩm độc lập.
 - `<img>` dùng để hiển thị ảnh; `src` xác định đường dẫn; `alt` mô tả hình ảnh.
@@ -76,7 +74,7 @@ Sau khi nhận kết quả từ AI, em đã thực hiện:
 - `class="product-category"` và `class="product-description"` kết nối các đoạn nội dung với quy tắc định dạng CSS.
 - `<button>` tạo nút thao tác; `type="button"` không tự gửi biểu mẫu; `data-product` lưu tên sản phẩm cho xử lý tương tác.
 
-**Về CSS3:**
+Về CSS3:
 
 - `.btn-detail` lựa chọn và định dạng những phần tử có class `btn-detail`.
 - `width`, `margin-bottom`, `background-color`, `color` và `border` điều chỉnh kích thước, khoảng cách, màu nền, màu chữ và đường viền nút.
