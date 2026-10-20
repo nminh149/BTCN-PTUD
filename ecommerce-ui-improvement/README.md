@@ -35,20 +35,6 @@ Vấn đề ban đầu: Ảnh trên giao diện do AI tạo chỉ mang tính min
 
 Cách chỉnh sửa: Em thay ảnh minh họa bằng ảnh sản phẩm thực tế lưu tại thư mục image/, thay đường dẫn trong thuộc tính src của thẻ <img>, đồng thời cập nhật alt, data-name, data-keywords, tên sản phẩm, product-category và product-description tương ứng.
 
-Ví dụ:
-<article class="product-card"
-         data-name="Tẩy tế bào chết Body"
-         data-keywords="tay te bao chet body">
-  <div class="product-image">
-    <img src="image/tay-te-bao-body.webp"
-         alt="Sản phẩm tẩy tế bào chết Body"
-         width="360" height="360">
-  </div>
-</article>
-- <img> hiển thị ảnh; src chỉ đường dẫn đến tệp ảnh (image/ là thư mục, tay-te-bao-body.webp là tên tệp và định dạng).
-- alt mô tả ảnh bằng văn bản.
-- data-name và data-keywords lưu dữ liệu tên và từ khóa phục vụ việc tìm kiếm bằng JavaScript.
-- product-category và product-description là các class CSS dùng để định dạng danh mục và mô tả; nội dung hiển thị được chỉnh trực tiếp trong HTML.
 6.2. Thêm nút “Xem chi tiết”
 Vấn đề ban đầu: Mỗi sản phẩm chỉ có nút “Thêm vào giỏ”, chưa có lựa chọn “Xem chi tiết”.
 
