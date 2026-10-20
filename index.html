@@ -1,0 +1,120 @@
+﻿<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Giao diện tìm kiếm và khám phá sản phẩm mỹ phẩm – bản demo HTML5, CSS3 và JavaScript thuần.">
+  <title>Tìm kiếm sản phẩm | Hella Beauty Demo</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="index.html" aria-label="Hella Beauty Demo - về đầu trang">hella<span>beauty</span><small>DEMO</small></a>
+      <nav class="main-nav" aria-label="Điều hướng chính">
+        <a href="#tim-kiem">Tìm kiếm</a>
+        <a href="#san-pham">Sản phẩm</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" aria-labelledby="page-title">
+      <div class="container">
+        <p class="eyebrow">CHĂM SÓC BẢN THÂN MỖI NGÀY</p>
+        <h1 id="page-title">Tìm sản phẩm phù hợp với bạn</h1>
+        <p class="hero-description">Tìm theo tên, công dụng hoặc khám phá các sản phẩm được yêu thích.</p>
+      </div>
+    </section>
+
+    <section class="search-section container" id="tim-kiem" aria-labelledby="search-heading">
+      <h2 id="search-heading" class="visually-hidden">Tìm kiếm sản phẩm</h2>
+      <div class="search-panel">
+        <form class="search-form" id="search-form" role="search">
+          <label for="search-input" class="search-label">Bạn đang tìm sản phẩm gì?</label>
+          <div class="search-row">
+            <div class="input-wrap">
+              <svg class="search-icon" width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><path d="m16 16 5 5"></path></svg>
+              <input id="search-input" type="search" name="q" autocomplete="off" placeholder="Nhập tên sản phẩm hoặc công dụng..." aria-describedby="search-hint" aria-controls="history-section">
+            </div>
+            <button class="btn btn-primary search-submit" type="submit">Tìm kiếm</button>
+          </div>
+          <p id="search-hint" class="hint">Ví dụ: dầu gội, dưỡng ẩm, chống nắng, chăm sóc tóc</p>
+        </form>
+
+        <section class="history-section" id="history-section" aria-labelledby="history-heading" hidden>
+          <div class="section-heading-inline">
+            <h3 id="history-heading">Tìm kiếm gần đây</h3>
+            <button type="button" class="text-button" id="clear-history">Xóa lịch sử</button>
+          </div>
+          <ul id="history-list" class="history-list" aria-label="Các tìm kiếm gần đây"></ul>
+        </section>
+
+        <section class="suggestions" aria-labelledby="suggestions-heading">
+          <h3 id="suggestions-heading">Gợi ý tìm kiếm</h3>
+          <div class="chip-list">
+            <button type="button" class="chip" data-query="Dầu gội">Dầu gội</button>
+            <button type="button" class="chip" data-query="Dưỡng ẩm">Dưỡng ẩm</button>
+            <button type="button" class="chip" data-query="Chống nắng">Chống nắng</button>
+            <button type="button" class="chip" data-query="Chăm sóc tóc">Chăm sóc tóc</button>
+            <button type="button" class="chip" data-query="Làm sạch da">Làm sạch da</button>
+          </div>
+        </section>
+      </div>
+    </section>
+
+    <section class="products-section container" id="san-pham" aria-labelledby="products-heading">
+      <div class="products-heading-row">
+        <div>
+          <p class="eyebrow">GỢI Ý CHO BẠN</p>
+          <h2 id="products-heading">Sản phẩm phổ biến</h2>
+        </div>
+        <p class="product-count" id="product-count">6 sản phẩm</p>
+      </div>
+      <p id="search-feedback" class="search-feedback" role="status" aria-live="polite"></p>
+      <div class="product-grid" id="product-grid">
+        <article class="product-card" data-name="Dầu gội Bưởi" data-keywords="dau goi buoi cham soc toc lam sach toc">
+          <div class="product-image"><img src="image/dau-goi.webp" alt="Minh họa chai dầu gội Bưởi" width="360" height="360"></div>
+          <div class="product-info"><p class="product-category">CHĂM SÓC TÓC</p><h3>Dầu gội Bưởi</h3><p class="product-description">Làm sạch tóc và da đầu</p><p class="product-price">259.000₫</p>
+            <button class="btn btn-detail" type="button" data-product="Dầu gội Bưởi">Xem chi tiết</button>
+            <button class="btn btn-outline product-action" type="button" data-product="Dầu gội Bưởi">Thêm vào giỏ</button></div>
+        </article>
+        <article class="product-card" data-name="Nước tẩy trang" data-keywords="nuoc tay trang lam sach da mat">
+          <div class="product-image"><img src="image/tay-trang.webp" alt="Minh họa chai Nước tẩy trang" width="360" height="360"></div>
+          <div class="product-info"><p class="product-category">LÀM SẠCH DA</p><h3>Nước tẩy trang</h3><p class="product-description">Làm sạch và mềm da</p><p class="product-price">199.000₫</p>
+            <button class="btn btn-detail" type="button" data-product="Nước tẩy trang">Xem chi tiết</button>
+            <button class="btn btn-outline product-action" type="button" data-product="Nước tẩy trang">Thêm vào giỏ</button></div>
+        </article>
+        <article class="product-card" data-name="Tẩy tế bào chết Body" data-keywords="tay te bao chet body">
+          <div class="product-image"><img src="image/tay-te-bao-body.webp" alt="Minh họa tuýp kem chống nắng" width="360" height="360"></div>
+          <div class="product-info"><p class="product-category">BẢO VỆ DA</p><h3>Tẩy tế bào chết Body</h3><p class="product-description">Làm sạch và mềm da</p><p class="product-price">289.000₫</p>
+            <button class="btn btn-detail" type="button" data-product="Tẩy tế bào chết Body">Xem chi tiết</button>
+            <button class="btn btn-outline product-action" type="button" data-product="Tẩy tế bào chết Body">Thêm vào giỏ</button></div>
+        </article>
+        <article class="product-card" data-name="Sữa tắm" data-keywords="sua tam lam sach da">
+          <div class="product-image"><img src="image/sua-tam.jpg" alt="Minh họa chai sữa tắm" width="360" height="360"></div>
+          <div class="product-info"><p class="product-category">LÀM SẠCH DA</p><h3>Sữa tắm</h3><p class="product-description">Làm sạch và mềm da</p><p class="product-price">199.000₫</p>
+            <button class="btn btn-detail" type="button" data-product="Sữa tắm">Xem chi tiết</button>
+            <button class="btn btn-outline product-action" type="button" data-product="Sữa tắm">Thêm vào giỏ</button></div>
+        </article>
+        <article class="product-card" data-name="Tẩy tế bào chết da đầu" data-keywords="tay te bao chet da dau">
+          <div class="product-image"><img src="image/tay-te-bao-da-dau.jpg" alt="Minh họa hũ tẩy tế bào chết da đầu" width="360" height="360"></div>
+          <div class="product-info"><p class="product-category">CHĂM SÓC TÓC</p><h3>Tẩy tế bào chết da đầu</h3><p class="product-description">Làm sạch da đầu và thúc đẩy sự phát triển của tóc</p><p class="product-price">249.000₫</p>
+            <button class="btn btn-detail" type="button" data-product="Tẩy tế bào chết da đầu">Xem chi tiết</button>
+            <button class="btn btn-outline product-action" type="button" data-product="Tẩy tế bào chết da đầu">Thêm vào giỏ</button></div>
+        </article>
+        <article class="product-card" data-name="Xịt thơm bodymist" data-keywords="xit thom bodymist">
+          <div class="product-image"><img src="image/bodymist.webp" alt="Minh họa hũ kem dưỡng ẩm" width="360" height="360"></div>
+          <div class="product-info"><p class="product-category">DƯỠNG DA</p><h3>Xịt thơm bodymist</h3><p class="product-description">Duy trì mùi hương dễ chịu cho cơ thể</p><p class="product-price">149.000₫</p>
+            <button class="btn btn-detail" type="button" data-product="Xịt thơm bodymist">Xem chi tiết</button>
+            <button class="btn btn-outline product-action" type="button" data-product="Xịt thơm bodymist">Thêm vào giỏ</button></div>
+        </article>
+      </div>
+      <div id="empty-state" class="empty-state" hidden><h3>Chưa tìm thấy sản phẩm phù hợp</h3><p>Hãy thử từ khóa khác như “dưỡng ẩm”, “dầu gội” hoặc “chống nắng”.</p><button type="button" id="show-all" class="btn btn-primary">Xem tất cả sản phẩm</button></div>
+    </section>
+  </main>
+  <footer class="site-footer"><div class="container"><p>© 2026 Hella Beauty – Giao diện minh họa phục vụ bài tập. Sản phẩm và giá là dữ liệu mẫu, không phải thông tin bán hàng chính thức.</p></div></footer>
+  <div class="toast" id="toast" role="status" aria-live="polite" hidden></div>
+</body>
+</html>
