@@ -14,8 +14,9 @@
   --font-price: "Francois One", sans-serif;
 }
 
-*, *::before, *::after { box-sizing: border-box; }
+* { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
+#san-pham {scroll-margin-top: 90px;}
 
 body {
   margin: 0;
@@ -26,10 +27,15 @@ body {
   background: #fffdfd;
   line-height: 1.55;
 }
+
 button, input { font: inherit; }
 button { cursor: pointer; }
+
 a { color: inherit; text-decoration: none; }
+
 img { display: block; max-width: 100%; }
+
+
 [hidden] { display: none !important; }
 .container { width: min(1120px, calc(100% - 40px)); margin-inline: auto; }
 .visually-hidden {
@@ -64,7 +70,7 @@ h3 { font-size: 1.125rem; line-height: 1.4; }
   display:flex;
   justify-content:space-between;
   align-items:center;
-  gap:20px
+  gap:20px;
 }
 .brand { display: inline-flex; align-items: center; flex: 0 0 auto; }
 .brand-logo { width: 160px; height: auto; max-height: 60px; object-fit: contain; }
@@ -182,6 +188,15 @@ h3 { font-size: 1.125rem; line-height: 1.4; }
   margin-bottom:12px
 }
 .search-row{display:flex;gap:12px}
+
+/* Nút Tìm kiếm điều hướng đến sản phẩm */
+.search-submit {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  white-space: nowrap;
+}
 
 /* Ô nhập từ khóa */
 .input-wrap{display:flex;align-items:center;gap:12px;border:1.5px solid #d9ccd3;border-radius:12px;padding:0 16px;min-width:0;flex:1;background:#fff}
@@ -415,11 +430,30 @@ input::placeholder{color:#8a8088}
   outline-offset: 3px;
 }
 
-/* Giao diện nút trên điện thoại */
+/* =========================================================
+   RESPONSIVE - DANH SÁCH SẢN PHẨM
+   Desktop > 900px: 3 cột | Tablet & Mobile <= 900px: 2 cột
+   ========================================================= */
+
+/* Máy tính bảng: từ 900px trở xuống */
+@media (max-width: 900px) {
+  .product-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 16px;
+  }
+
+  .product-info { padding: 12px; }
+  .product-category { font-size: 11px; }
+  .product-card h3 { font-size: 16px; line-height: 1.35; }
+  .product-description { font-size: 12px; }
+  .product-price { font-size: 18px; }
+  .product-card .btn { padding: 10px 6px; font-size: 12px; }
+  .product-details { font-size: 12px; padding: 10px 6px; margin-bottom: 8px; }
+}
+
+/* Điện thoại: từ 520px trở xuống */
 @media (max-width: 520px) {
-  .product-details {
-    font-size: 12px;
-    padding: 10px 6px;
-    margin-bottom: 8px;
+  .product-grid {
+    gap: 12px;
   }
 }

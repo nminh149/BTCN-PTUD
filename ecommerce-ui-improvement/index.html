@@ -5,15 +5,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Giao diện tìm kiếm và khám phá sản phẩm mỹ phẩm – bản demo HTML5, CSS3 và JavaScript thuần.">
-  
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Francois+One&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap" rel="stylesheet">
-
   <title>Tìm kiếm sản phẩm | Hella Beauty Demo</title>
   <link rel="stylesheet" href="css/styles.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.2/font/bootstrap-icons.min.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Francois+One&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&display=swap" rel="stylesheet">
 </head>
 
 
@@ -29,6 +27,7 @@
         <a href="#trang-chu.html"> Trang chủ</a>
         <a href="#cau-chuyen.html">Câu chuyện thương hiệu</a>
         <a href="#danh-muc-san-pham.html">Danh mục sản phẩm</a>
+        <a href="#san-pham">Khám phá sản phẩm</a>
       </nav>
 
       <!-- Biểu tượng tài khoản và giỏ hàng -->
@@ -67,7 +66,7 @@
               <svg class="search-icon" width="21" height="21" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><path d="m16 16 5 5"></path></svg>
               <input id="search-input" type="search" name="q" autocomplete="off" placeholder="Nhập tên sản phẩm hoặc công dụng..." aria-describedby="search-hint" aria-controls="history-section">
             </div>
-            <button class="btn btn-primary search-submit" type="submit">Tìm kiếm</button>
+            <a href="#san-pham" class="btn btn-primary search-submit">Tìm kiếm</a>
           </div>
           <p id="search-hint" class="hint">Gợi ý tìm kiếm: dầu gội, dưỡng ẩm, chống nắng, chăm sóc tóc</p>
         </form>
@@ -105,13 +104,11 @@
       </div>
       <p id="search-feedback" class="search-feedback" role="status" aria-live="polite"></p>
       <div class="product-grid" id="product-grid">
+
         <!-- Thẻ sản phẩm 1-->
         <article class="product-card" data-name="Dầu gội Bưởi" data-keywords="dau goi buoi cham soc toc lam sach toc">
           <div class="product-image">
-            <img 
-            src="image/dau-goi.webp" 
-            alt="Ảnh chai dầu gội Bưởi"
-            >
+            <img src="image/dau-goi.webp" alt="Ảnh chai dầu gội Bưởi">
           </div>
           <!-- Thông tin sản phẩm 1-->
           <div class="product-info">
@@ -122,13 +119,11 @@
             <button class="btn btn-detail" type="button" data-product="Dầu gội Bưởi">Xem chi tiết</button>
             <button class="btn btn-outline product-action" type="button" data-product="Dầu gội Bưởi">Thêm vào giỏ</button></div>
         </article>
+
         <!-- Thẻ sản phẩm 2-->
         <article class="product-card" data-name="Nước tẩy trang" data-keywords="nuoc tay trang lam sach da mat">
           <div class="product-image">
-            <img 
-            src="image/tay-trang.webp" 
-            alt="Ảnh chai Nước tẩy trang"
-            >
+            <img src="image/tay-trang.webp" alt="Ảnh chai Nước tẩy trang">
           </div>
           <!-- Thông tin sản phẩm 2-->
           <div class="product-info">
@@ -139,13 +134,11 @@
             <button class="btn btn-detail" type="button" data-product="Nước tẩy trang">Xem chi tiết</button>
             <button class="btn btn-outline product-action" type="button" data-product="Nước tẩy trang">Thêm vào giỏ</button></div>
         </article>
+
         <!-- Thẻ sản phẩm 3-->
         <article class="product-card" data-name="Tẩy tế bào chết Body" data-keywords="tay te bao chet body">
           <div class="product-image">
-            <img 
-            src="image/tay-te-bao-body.webp" 
-            alt="Ảnh chai Tẩy tế bào chết Body"
-            >
+            <img src="image/tay-te-bao-body.webp" alt="Ảnh chai Tẩy tế bào chết Body">
           </div>
           <!-- Thông tin sản phẩm 3-->
           <div class="product-info">
@@ -156,26 +149,22 @@
             <button class="btn btn-detail" type="button" data-product="Tẩy tế bào chết Body">Xem chi tiết</button>
             <button class="btn btn-outline product-action" type="button" data-product="Tẩy tế bào chết Body">Thêm vào giỏ</button></div>
         </article>
+
         <!-- Thẻ sản phẩm 4-->
         <article class="product-card" data-name="Sữa tắm" data-keywords="sua tam lam sach da">
           <div class="product-image">
-            <img 
-            src="image/sua-tam.jpg" 
-            alt="Ảnh chai sữa tắm"
-            >
+            <img src="image/sua-tam.jpg" alt="Ảnh chai sữa tắm">
           </div>
           <!-- Thông tin sản phẩm 4-->
           <div class="product-info"><p class="product-category">LÀM SẠCH DA</p><h3>Sữa tắm</h3><p class="product-description">Làm sạch và mềm da</p><p class="product-price">199.000₫</p>
             <button class="btn btn-detail" type="button" data-product="Sữa tắm">Xem chi tiết</button>
             <button class="btn btn-outline product-action" type="button" data-product="Sữa tắm">Thêm vào giỏ</button></div>
         </article>
+
         <!-- Thẻ sản phẩm 5-->
         <article class="product-card" data-name="Tẩy tế bào chết da đầu" data-keywords="tay te bao chet da dau">
           <div class="product-image">
-            <img 
-            src="image/tay-te-bao-da-dau.jpg" 
-            alt="Ảnh hũ tẩy tế bào chết da đầu"
-            >
+            <img src="image/tay-te-bao-da-dau.jpg" alt="Ảnh hũ tẩy tế bào chết da đầu">
           </div>
           <!-- Thông tin sản phẩm 5-->
           <div class="product-info">
@@ -186,13 +175,11 @@
             <button class="btn btn-detail" type="button" data-product="Tẩy tế bào chết da đầu">Xem chi tiết</button>
             <button class="btn btn-outline product-action" type="button" data-product="Tẩy tế bào chết da đầu">Thêm vào giỏ</button></div>
         </article>
+
         <!-- Thẻ sản phẩm 6-->
         <article class="product-card" data-name="Xịt thơm bodymist" data-keywords="xit thom bodymist">
           <div class="product-image">
-            <img 
-            src="image/bodymist.webp" 
-            alt="Ảnh chai xịt thơm bodymist"
-            >
+            <img src="image/bodymist.webp" alt="Ảnh chai xịt thơm bodymist">
           </div>
           <!-- Thông tin sản phẩm 6-->
           <div class="product-info">
