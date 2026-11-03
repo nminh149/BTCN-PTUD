@@ -83,3 +83,256 @@ Về CSS3:
 - `.product-grid` sử dụng CSS Grid; Media Queries giúp bố cục sản phẩm thích ứng giữa desktop và điện thoại.
 
 Qua quá trình thực hiện, em hiểu rằng các thuộc tính/class trong HTML phải khớp với bộ chọn trong CSS, và cần kiểm tra lại kết quả AI trước khi đưa vào dự án.
+
+
+**BÁO CÁO SỬ DỤNG AI – BUỔI 2**
+
+Môn học: Phát triển ứng dụng WEB/TMĐT
+Website thực hành: Hella Beauty
+Công cụ AI sử dụng: ChatGPT
+
+1. Mục đích sử dụng AI
+
+Trong quá trình thực hiện bài tập Buổi 2, em sử dụng ChatGPT để hỗ trợ kiểm tra cấu trúc HTML5, tìm hiểu các thuộc tính CSS3 và nhận đề xuất cải thiện giao diện website Hella Beauty đã xây dựng ở Buổi 1.
+
+Dưới đây là những prompt thực tế em đã sử dụng và nội dung phản hồi tương ứng của AI.
+
+2. Các prompt đã sử dụng
+
+Prompt 1 – Kiểm tra cấu trúc HTML5
+
+Prompt đã gửi:
+
+"Tôi đang học HTML5 và muốn cải thiện cấu trúc HTML của bài tập Buổi 1.
+
+Đây là mã HTML hiện tại:
+
+[Đã cung cấp toàn bộ mã HTML của website Hella Beauty]
+
+Hãy hướng dẫn tôi:
+
+Xác định các phần tử HTML đang được sử dụng.
+
+Kiểm tra cách sử dụng header, nav, main, section, article và footer nếu có.
+
+Kiểm tra thứ bậc tiêu đề h1, h2, h3.
+
+Kiểm tra cách sử dụng img, alt và a.
+
+Phát hiện các thẻ chưa đóng hoặc lồng nhau chưa hợp lý.
+
+Đề xuất cách sửa phù hợp với nội dung hiện tại.
+
+Hãy phân biệt lỗi cần sửa và đề xuất cải thiện.
+Không thêm phần tử HTML chỉ để làm mã nguồn dài hơn.
+Không viết lại toàn bộ website.
+Giải thích lý do của từng thay đổi."
+
+Kết quả AI phản hồi:
+
+Xác định các phần tử HTML5 đang sử dụng và vai trò của chúng.
+
+Nhận xét hệ thống tiêu đề h1, h2, h3 tương đối hợp lý.
+
+Không phát hiện lỗi thiếu thẻ đóng nghiêm trọng.
+
+Đề xuất chuyển khu vực Hero từ header vào main để tổ chức nội dung hợp lý hơn.
+
+Đề xuất kiểm tra thuộc tính alt và các liên kết điều hướng.
+
+Prompt 2 – Thực hành CSS Selector và Box Model
+
+Prompt đã gửi:
+
+"Tôi muốn thực hành CSS selector và Box Model trên một thẻ sản phẩm trong website của mình.
+
+HTML hiện tại:
+
+[Đã cung cấp HTML danh sách 6 sản phẩm của website Hella Beauty]
+
+Hãy hướng dẫn tôi:
+
+Sử dụng element selector và class selector.
+
+Sử dụng descendant selector khi phù hợp.
+
+Điều chỉnh margin, padding và border.
+
+Sử dụng border-radius để bo góc.
+
+Định dạng tên và giá sản phẩm.
+
+Định dạng liên kết thành nút thao tác đơn giản.
+
+Hãy giải thích sự khác nhau giữa margin và padding.
+Giải thích tác dụng của box-sizing: border-box.
+Chỉ đưa ra phần CSS cần thiết.
+Không thay đổi nội dung hoặc tạo lại toàn bộ HTML."
+
+Kết quả AI phản hồi:
+
+Đề xuất sử dụng .product-card để định dạng thẻ sản phẩm.
+
+Hướng dẫn sử dụng element, class và descendant selector.
+
+Giải thích margin, padding, border và border-radius.
+
+Đề xuất CSS cho tên, giá và nút thao tác.
+
+Giải thích tác dụng của box-sizing: border-box.
+
+Prompt 3 – Thực hành Flexbox
+
+Prompt đã gửi:
+
+"Tôi đang học CSS3 và muốn thực hành Flexbox trên một khu vực của website thương mại điện tử.
+
+Đây là HTML hiện tại:
+
+[Đã cung cấp HTML Header gồm logo, menu điều hướng, icon tài khoản, giỏ hàng và Hero Banner]
+
+Hãy hướng dẫn tôi:
+
+Xác định phần tử cha cần sử dụng display: flex.
+
+Căn chỉnh các phần tử bằng justify-content.
+
+Căn chỉnh theo trục còn lại bằng align-items.
+
+Tạo khoảng cách bằng gap.
+
+So sánh kết quả khi thay đổi các giá trị của justify-content.
+
+Hãy đưa ra một đoạn CSS ngắn phù hợp với HTML.
+Giải thích từng thuộc tính và kết quả mong đợi.
+Không sử dụng framework CSS.
+Không viết lại toàn bộ giao diện."
+
+Kết quả AI phản hồi:
+
+Xác định .header-inner là phần tử cha phù hợp để áp dụng Flexbox.
+
+Đề xuất display: flex và justify-content: space-between.
+
+Hướng dẫn sử dụng align-items: center và gap.
+
+Giải thích sự khác nhau giữa các giá trị của justify-content.
+
+Chỉ ra một số đường dẫn điều hướng cần kiểm tra.
+
+Prompt 4 – Thực hành CSS Grid
+
+Prompt đã gửi:
+
+"Tôi đã có một danh sách sản phẩm bằng HTML.
+
+Đây là mã HTML hiện tại:
+
+[Đã cung cấp HTML danh sách 6 sản phẩm của website Hella Beauty]
+
+Hãy hướng dẫn tôi sử dụng CSS Grid để:
+
+Bố trí danh sách thành hai cột.
+
+Điều chỉnh khoảng cách giữa các sản phẩm.
+
+Giữ hình ảnh hiển thị đúng tỷ lệ.
+
+Thay đổi số cột và quan sát kết quả.
+
+Giải thích grid-template-columns, repeat và gap.
+
+Giải thích tác dụng của object-fit: cover.
+
+Chỉ viết CSS cần thiết cho danh sách hiện có.
+Không sử dụng Bootstrap hoặc Tailwind CSS.
+Giải thích cách kiểm tra kết quả trên trình duyệt."
+
+Kết quả AI phản hồi:
+
+Đề xuất sử dụng display: grid.
+
+Hướng dẫn chia danh sách thành hai cột với grid-template-columns.
+
+Giải thích repeat(), minmax() và gap.
+
+Đề xuất sử dụng aspect-ratio và object-fit: cover.
+
+Hướng dẫn kiểm tra bố cục khi thay đổi số cột trên trình duyệt.
+
+Prompt 5 – Bổ sung hiệu ứng Hover và Focus
+
+Prompt đã gửi:
+
+"Tôi muốn bổ sung hiệu ứng hover và focus cho một nút bấm hoặc liên kết trong website.
+
+Đây là HTML và CSS hiện tại:
+
+[Đã cung cấp toàn bộ CSS hiện tại của website Hella Beauty]
+
+Hãy hướng dẫn tôi:
+
+Tạo hiệu ứng hover nhẹ.
+
+Sử dụng transition để tạo chuyển đổi mượt.
+
+Bổ sung focus-visible để hỗ trợ điều hướng bằng bàn phím.
+
+Đảm bảo màu chữ và màu nền dễ nhìn.
+
+Không làm thay đổi bố cục quá nhiều.
+
+Hãy chỉ đưa ra phần CSS cần thêm hoặc sửa.
+Giải thích từng thuộc tính và cách kiểm tra."
+
+Kết quả AI phản hồi:
+
+Nhận xét website đã có một số hiệu ứng hover và focus.
+
+Đề xuất cải thiện hiệu ứng cho nút “Xem chi tiết”.
+
+Hướng dẫn sử dụng transition, :hover và :focus-visible.
+
+Giải thích sự khác nhau giữa hover và focus.
+
+Phát hiện hai khai báo CSS sử dụng dấu hai chấm không đúng trong border-top và font-weight.
+
+3. Các trao đổi bổ sung với AI
+
+Ngoài những prompt thực hành theo các bước trong đề, em còn trao đổi với ChatGPT về cách tổ chức trang tìm kiếm và vị trí hiển thị khung tìm kiếm trên Hero Banner.
+
+Trao đổi về giao diện tìm kiếm:
+
+Em đặt câu hỏi về việc khu vực tìm kiếm được xem là một trang giao diện riêng hay chỉ là công cụ tích hợp trong website.
+
+AI đã phân tích cấu trúc HTML hiện tại và đối chiếu với đề Buổi 2, từ đó đề xuất tiếp tục phát triển giao diện đã xây dựng ở Buổi 1 mà không bắt buộc tạo thêm trang HTML mới.
+
+Trao đổi về Hero Banner:
+
+Prompt đã gửi:
+
+"t đang làm hero banner nhưng mà phần khung tìm kiếm bị lùi sau banner, t muốn cho khung tìm kiếm ở trên lớp banner, chỉnh sửa như thế nào và giải thích rõ nhé"
+
+AI đã đề xuất sử dụng position: relative, z-index, margin-top âm và màu nền của .search-panel để kiểm soát thứ tự hiển thị và tạo hiệu ứng khung tìm kiếm chồng lên Banner.
+
+4. Phần kiểm tra và điều chỉnh
+
+Qua các cuộc trao đổi, AI đã cung cấp những hướng dẫn và đề xuất chỉnh sửa mã nguồn. Tuy nhiên, các phản hồi trong cuộc trò chuyện không đủ để xác nhận toàn bộ đề xuất đã được áp dụng và kiểm thử thành công trên website.
+
+Phần này cần được bổ sung dựa trên kết quả thực hành thực tế, gồm:
+
+Những đoạn CSS đã áp dụng vào website.
+
+Những thay đổi đã thử nghiệm nhưng không sử dụng.
+
+Các lỗi đã tự phát hiện và sửa.
+
+Kết quả kiểm tra trên trình duyệt.
+
+Hình ảnh minh chứng trước và sau chỉnh sửa.
+
+5. Kết luận
+
+ChatGPT được sử dụng để hỗ trợ phân tích và giải thích các kiến thức HTML5, CSS Selector, Box Model, Flexbox, CSS Grid, Hover và Focus.
+
+Những phản hồi của AI đóng vai trò tham khảo trong quá trình cải thiện website Hella Beauty. Việc xác nhận các thay đổi đã hoàn thành cần dựa trên mã nguồn và kết quả kiểm thử thực tế của bài làm.
