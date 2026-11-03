@@ -75,3 +75,87 @@ Kết quả: Giao diện thẻ sản phẩm trực quan và đồng bộ hơn. P
 Em sử dụng ChatGPT để hỗ trợ phân tích giao diện website tham khảo, đề xuất cấu trúc khu vực tìm kiếm, tạo mã nguồn demo HTML/CSS/JavaScript, giải thích các thành phần mã và tìm nguyên nhân lỗi CSS.
 
 Sau khi nhận kết quả từ AI, em tự xem lại giao diện, thay ảnh minh họa bằng ảnh sản phẩm thực tế, chỉnh tên/danh mục/mô tả/từ khóa cho đồng bộ và thêm nút “Xem chi tiết”. Em cũng kiểm tra giao diện trên máy tính và bằng Chrome DevTools ở chế độ mô phỏng điện thoại. 
+
+1. Giới thiệu bài tập
+
+Bài tập Buổi 2 tiếp tục phát triển giao diện website Hella Beauty từ Buổi 1, tập trung vào việc cải thiện cấu trúc HTML5, định dạng CSS3 và tổ chức bố cục giao diện.
+
+Website được xây dựng nhằm minh họa giao diện tìm kiếm và khám phá sản phẩm mỹ phẩm.
+
+2. Website tham khảo và khu vực cải tiến
+
+Website tham khảo: https://hellabeauty.vn/
+
+Khu vực cải tiến: Header, thanh điều hướng, tiêu đề trang, khu vực tìm kiếm và danh sách sản phẩm gợi ý.
+
+Mục tiêu: Giúp giao diện rõ ràng, dễ quan sát và thuận tiện hơn khi điều hướng.
+
+3. Kỹ thuật HTML5/CSS3 đã thực hành
+
+HTML5:
+
+Sử dụng các thẻ ngữ nghĩa: header, nav, main, section, article, footer.
+
+Tổ chức nội dung bằng các thẻ tiêu đề, hình ảnh, liên kết và biểu mẫu.
+
+Bổ sung thuộc tính alt cho hình ảnh.
+
+CSS3:
+
+Áp dụng CSS Selector và Box Model.
+
+Sử dụng Flexbox để bố trí Header.
+
+Sử dụng CSS Grid để sắp xếp sáu sản phẩm gợi ý.
+
+Thiết lập Hover, Focus và Media Query để cải thiện trải nghiệm giao diện.
+
+4. Hướng dẫn chạy website
+
+Tải hoặc clone repository về máy.
+
+Mở thư mục chứa mã nguồn.
+
+Mở file index.html bằng trình duyệt.
+
+Kiểm tra giao diện, hình ảnh và các liên kết điều hướng.
+
+Lưu ý: Đây là giao diện minh họa phục vụ học tập, không yêu cầu backend hoặc cơ sở dữ liệu.
+
+5. Những thay đổi đã thực hiện
+
+Bổ sung và sắp xếp lại các thành phần trong Header.
+
+Điều chỉnh tiêu đề trang theo hướng đơn giản, dễ nhận biết.
+
+Định dạng các Product Card bằng CSS Selector và Box Model.
+
+Sử dụng Flexbox và CSS Grid để cải thiện bố cục.
+
+Bổ sung hiệu ứng Hover, Focus và điều chỉnh hiển thị trên màn hình nhỏ.
+
+Điều chỉnh mục điều hướng thành “Khám phá sản phẩm”, liên kết đến khu vực sản phẩm gợi ý.
+
+6. Công cụ AI và cách kiểm tra kết quả
+
+Công cụ AI sử dụng: ChatGPT.
+
+Mục đích sử dụng:
+
+Hỗ trợ giải thích kiến thức HTML5 và CSS3.
+
+Gợi ý cách tổ chức bố cục và cải thiện giao diện.
+
+Hỗ trợ rà soát mã HTML/CSS và đề xuất cách chỉnh sửa.
+
+Cách kiểm tra:
+
+Em đối chiếu các đề xuất của AI với mã nguồn thực tế, kiểm tra sự phù hợp của các thuộc tính HTML/CSS và thử thao tác trên trình duyệt.
+
+Ví dụ, em điều chỉnh tên mục “Danh mục sản phẩm” thành “Khám phá sản phẩm” để phù hợp với khu vực hiển thị sản phẩm gợi ý của website.
+
+7. Đường dẫn dự án
+
+GitHub Repository: (https://github.com/nminh149/BTCN-PTUD)
+
+Website Demo: (file:///c%3A/Users/Dell/Documents/GitHub/BTCN-PTUD/ecommerce-ui-improvement/index.html?q=#trang-chu.html)
